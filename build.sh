@@ -13,7 +13,7 @@ if [ -x "$(which apt 2>/dev/null)" ]
     then
         apt update && apt install -y \
             build-essential clang pkg-config git autoconf libtool \
-            gettext autopoint po4a upx libpcre2-dev
+            gettext autopoint po4a libpcre2-dev
 fi
 
 [ "$grep_version" == "latest" ] && \
